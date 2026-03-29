@@ -1,0 +1,29 @@
+name: octal-design-dev
+
+services:
+  design-web:
+    image: octalmesh/design-web:dev
+    container_name: octal-design-web-dev
+    build:
+      context: ../../..
+      dockerfile: infra/dev/docker/Dockerfile
+    env_file:
+      - ../.env.example
+    environment:
+      CHOKIDAR_USEPOLLING: "1"
+      DESIGN_WEB_PORT: "${DESIGN_WEB_PORT:-5175}"
+    ports:
+      - "${DESIGN_WEB_PORT:-5175}:${DESIGN_WEB_PORT:-5175}"
+    volumes:
+      - ../../../:/app
+      - design-web-node-modules:/app/node_modules
+    command: npm run dev -- --host 0.0.0.0 --port ${DESIGN_WEB_PORT:-5175}
+    networks:
+      - octalmesh-design-dev
+
+networks:
+  octalmesh-design-dev:
+    name: octalmesh-design-dev
+
+volumes:
+  design-web-node-modules:

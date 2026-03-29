@@ -22,20 +22,20 @@ If you discover a security vulnerability, **do not open a public issue,
 discussion, or pull request**.
 Instead, report it privately:
 
-- Email: <security@octalmesh.com> *(preferred)*
+- Email: <security@octalmesh.com> _(preferred)_
 - Or contact a core [maintainer](https://github.com/nykonhrytsyshyn) directly
 
 ### Please include as much of the following information as possible:
 
 - Type of issue
-  *(e.g. authentication bypass, RCE, SQL injection, XSS, CSRF, data exposure,
-  logic flaw)*
+  _(e.g. authentication bypass, RCE, SQL injection, XSS, CSRF, data exposure,
+  logic flaw)_
 - Affected component(s), module(s), or service(s)
 - Location of the issue
-  *(repository, branch, commit, or direct URL if public)*
+  _(repository, branch, commit, or direct URL if public)_
 - Configuration or environment assumptions
 - Step-by-step instructions to reproduce the issue
-- Proof-of-concept or exploit code *(if available)*
+- Proof-of-concept or exploit code _(if available)_
 - Expected and actual behavior
 - Potential impact and realistic attack scenarios
 
