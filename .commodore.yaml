@@ -1,11 +1,18 @@
-role: squadron
-id: design
+role:   squadron
+id:     design
 binary: owd
 
 reactor:
   provider: tilt
-  context: ./
+  network:  octalnet-design
+  context:  ./
 
   blueprints:
-    - env: dev
+    - env:  dev
       path: ./infra/dev/Tiltfile
+
+    - env:  staging
+      path: ./infra/staging/Tiltfile
+
+    - env:  prod
+      path: ./infra/prod/Tiltfile
