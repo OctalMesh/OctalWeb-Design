@@ -19,6 +19,7 @@ services:
   owd-app-web:
     <<: *defaults
     container_name: "owd-app-web"
+    image: "octalmesh/owd-app-web"
     build:
       context: "../../.."
       dockerfile: "infra/dev/docker/Dockerfile"
