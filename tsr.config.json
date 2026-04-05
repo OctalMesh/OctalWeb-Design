@@ -1,0 +1,18 @@
+{
+  "routesDirectory": "./src/pages",
+  "generatedRouteTree": "./src/routeTree.gen.ts",
+  "routeFilePrefix": "",
+  "routeFileIgnorePattern": "((^|\\/)\\.)",
+  "routeFileIgnorePrefix": "-",
+  "routeToken": "route",
+  "indexToken": "index",
+  "quoteStyle": "double",
+  "semicolons": true,
+  "autoCodeSplitting": true,
+  "disableTypes": false,
+  "addExtensions": false,
+  "disableLogging": false,
+  "routeTreeFileHeader": ["/* eslint-disable */", "// @ts-nocheck", "// noinspection JSUnusedGlobalSymbols"],
+  "routeTreeFileFooter": [],
+  "enableRouteTreeFormatting": true
+}
